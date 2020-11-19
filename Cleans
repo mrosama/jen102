@@ -1,0 +1,40 @@
+#!/bin/bash
+#---------------------------------------------------------------------------------------------------------
+# Laravel Clean  http://localhost/
+#---------------------------------------------------------------------------------------------------------
+ sudo chmod -R gu+w storage
+sudo chmod -R guo+w storage
+echo -ne '............... (33%)\r'
+sleep 1
+
+php artisan view:clear
+php artisan cache:clear
+
+ echo -ne '..................... (50%)\r'
+sleep 1
+
+php artisan config:clear
+php artisan route:clear
+ 
+echo -ne '.............................................. (70%)\r'
+sleep 1
+
+
+php artisan clear-compiled
+php artisan  config:cache
+
+echo -ne '........................................................  (95%)\r'
+sleep 1
+
+ echo "" > storage/logs/laravel.log
+
+ echo -ne '............................................................  (100%)\r\n'
+ 
+
+
+
+ 
+
+ 
+
+ 
