@@ -34,7 +34,34 @@ stage('--init---'){
 }
 
 
+
+ stage('Checkout') {
+       when {
+                   expression {NAME == 'ali'}
+                   not { branch "main"}
+               }
+      steps {
+         echo "Checkout now...for  not develop and name ali."
+
+           }
  }
+
+
+
+
+
+
+
+
+
+
+ }
+
+
+
+
+
+
 
 
 }
