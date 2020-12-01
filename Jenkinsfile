@@ -37,7 +37,7 @@ stage('--init---'){
 
  stage('Checkout') {
        when {
-                   expression {NAME == 'ali'}
+                   expression {params.NAME == 'ali'}
                    not { branch "develop"}
                }
       steps {
@@ -46,7 +46,11 @@ stage('--init---'){
            }
  }
 
+ stage('Test') {
 
+
+
+ }
 
 
 
