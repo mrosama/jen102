@@ -48,7 +48,10 @@ stage('--init---'){
 
  stage('Test') {
 
+  steps {
+         echo "Checkout now...for  not develop and name ali."
 
+           }
 
  }
 
