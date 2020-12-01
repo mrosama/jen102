@@ -2,7 +2,7 @@ pipeline {
 
 agent any
         parameters {
-        string(name: 'Name', defaultValue: 'osama', description: 'Who should I say hello to?')
+        string(name: 'NAME', defaultValue: 'osama', description: 'Who should I say hello to?')
 
         text(name: 'BIOGRAPHY', defaultValue: '', description: 'Enter some information about the person')
 
