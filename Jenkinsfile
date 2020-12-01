@@ -38,7 +38,7 @@ stage('--init---'){
  stage('Checkout') {
        when {
                    expression {NAME == 'ali'}
-                   not { branch "main"}
+                   not { branch "develop"}
                }
       steps {
          echo "Checkout now...for  not develop and name ali."
